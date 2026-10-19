@@ -1,0 +1,20 @@
+:root{--bg:#262421;--p:#302e2b;--p2:#413e3a;--g:#81b64c;--t:#e8e6e3;--m:#9b9894;--l:#eeeed2;--d:#769656}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--t);font:15px/1.4 system-ui,sans-serif}
+header{background:#1f1d1b;padding:8px 16px;display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+header b{color:var(--g);font-size:20px;margin-right:10px}#me{margin-left:auto;color:var(--m)}
+button,.btn{background:var(--p2);color:var(--t);border:0;padding:8px 12px;border-radius:6px;cursor:pointer;font:inherit;margin:2px 0}
+button:focus-visible,.sq:focus-visible{outline:2px solid var(--g)}
+nav button.on,.g{background:var(--g);color:#fff;font-weight:700}
+main{display:grid;grid-template-columns:minmax(300px,640px) minmax(300px,430px);gap:16px;justify-content:center;padding:16px}
+@media(max-width:900px){main{grid-template-columns:1fr}}
+#bd{display:grid;grid-template:repeat(8,1fr)/repeat(8,1fr);aspect-ratio:1;border-radius:4px;overflow:hidden;user-select:none}
+.sq{display:flex;align-items:center;justify-content:center;position:relative;cursor:pointer;font-size:min(8.5vw,60px);line-height:1}
+.sq.l{background:var(--l)}.sq.d{background:var(--d)}.sq.h::before{content:"";position:absolute;inset:0;background:#f6f66988}
+.sq.t::after{content:"";width:28%;height:28%;border-radius:50%;background:#0003;position:absolute}.sq.c{box-shadow:inset 0 0 0 100px #e5393577}
+.sq span{position:relative;z-index:1}.w{color:#fff;text-shadow:0 0 2px #000,0 0 3px #000}.k{color:#1c1c1c;text-shadow:0 0 1px #fff9}
+.card{background:var(--p);border-radius:8px;padding:14px;margin-bottom:12px}h3{margin:0 0 8px}
+.row{display:flex;justify-content:space-between;align-items:center;padding:4px 0;border-bottom:1px solid var(--p2)}
+input,select,textarea{background:var(--bg);color:var(--t);border:1px solid var(--p2);border-radius:6px;padding:7px;font:inherit}
+textarea{width:100%;height:70px}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;text-align:center}.grid b{display:block;font-size:22px}
+.mvb{cursor:pointer;padding:1px 4px;border-radius:3px;display:inline-block}.mvb:hover{background:var(--p2)}
+#mv{max-height:150px;overflow:auto;color:var(--m)}svg{width:100%;background:var(--bg);border-radius:6px}
